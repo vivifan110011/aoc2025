@@ -47,14 +47,14 @@ for l, dist in enumerate(euclideans[1:]):
     #if l == LIM-2:
         #break
     if len(jun) == len(circuits[0]):
-        #p2 answer
+        #二部分の答え
         print(jun[dist[1]][0]*jun[dist[2]][0])
         break
 
 
 lens = [len(c) for c in circuits]
 lens.sort()
-#p1 answer
+#一部分の答え
 print(math.prod(lens[-3:]))
 
     
